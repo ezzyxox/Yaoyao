@@ -8,7 +8,7 @@
 /* Dreamy pastel background */
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: linear-gradient(135deg, #ffd6ec, #f3e5ff, #d6f4ff);
+  background: linear-gradient(135deg, #d6f0ff, #bde3ff, #a8d8ff);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@ body {
   border-radius: 30px;
   text-align: center;
   box-shadow: 0 20px 50px rgba(255, 182, 193, 0.4);
-  border: 3px solid #ffe6f2;
+  border: 3px solid #cceeff;
   animation: fadeIn 1s ease forwards;
   z-index: 2;
 }
@@ -62,7 +62,7 @@ body {
 
 /* Title */
 h1 {
-  color: #ff69b4;
+  color: #4da6ff;
   font-size: 30px;
   margin-bottom: 15px;
   animation: floaty 3s ease-in-out infinite;
