@@ -1,11 +1,15 @@
+/* ============================= */
 /* Reset */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Dreamy pastel background */
+/* ============================= */
+/* Sky Background */
+/* ============================= */
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background: linear-gradient(135deg, #d6f0ff, #bde3ff, #a8d8ff);
@@ -13,13 +17,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden; /* prevents sideways scroll */
   position: relative;
 }
+
+/* ============================= */
 /* Floating Puppies */
+/* ============================= */
 .puppy {
-  position: fixed;      /* important fix */
-  bottom: -40px;        /* start just below screen */
+  position: fixed;
+  bottom: -40px;
   font-size: 28px;
   animation: floatUp linear infinite;
   opacity: 0.9;
@@ -41,51 +48,37 @@ body {
   }
 }
 
-/* Main Card */
+/* ============================= */
+/* Main Container Card */
+/* ============================= */
 .container {
   background: white;
   padding: 50px;
   width: 90%;
-  max-width: 650px;
+  max-width: 700px;
   border-radius: 30px;
   text-align: center;
-  box-shadow: 0 20px 50px rgba(255, 182, 193, 0.4);
+  box-shadow: 0 20px 50px rgba(77, 166, 255, 0.35);
   border: 3px solid #cceeff;
   animation: fadeIn 1s ease forwards;
   z-index: 2;
 }
 
+/* Fade In Animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.days-wrapper {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.day-card {
-  background: #f0f9ff;
-  padding: 25px;
-  border-radius: 20px;
-  width: 250px;
-  box-shadow: 0 10px 25px rgba(77, 166, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.day-card:hover {
-  transform: translateY(-8px);
-}
-
-.day-card h2 {
-  color: #4da6ff;
-  margin-bottom: 15px;
-}
-
+/* ============================= */
+/* Title */
+/* ============================= */
 h1 {
   color: #4da6ff;
   font-size: 30px;
@@ -95,31 +88,69 @@ h1 {
 
 @keyframes floaty {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  50% { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
 
-/* Text */
+/* ============================= */
+/* Paragraph */
+/* ============================= */
 p {
   margin-bottom: 25px;
   font-size: 16px;
-  color: #555;
+  color: #444;
 }
 
+/* ============================= */
+/* Days Layout Wrapper */
+/* ============================= */
+.days-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* ============================= */
+/* Individual Day Card */
+/* ============================= */
+.day-card {
+  background: #f0f9ff;
+  padding: 25px;
+  border-radius: 20px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(77, 166, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(77, 166, 255, 0.35);
+}
+
+.day-card h2 {
+  color: #4da6ff;
+  margin-bottom: 15px;
+}
+
+/* ============================= */
 /* Button */
+/* ============================= */
 .submit-btn {
-  background: linear-gradient(45deg, #ff9ecf, #ff6fa5);
+  margin-top: 35px;
+  background: linear-gradient(45deg, #7ec8ff, #4da6ff);
   border: none;
   padding: 15px 35px;
   font-size: 16px;
   border-radius: 50px;
   color: white;
   cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(77, 166, 255, 0.4);
 }
 
 .submit-btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 15px 30px rgba(255, 105, 180, 0.6);
+  box-shadow: 0 15px 35px rgba(77, 166, 255, 0.6);
 }
