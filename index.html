@@ -1,186 +1,156 @@
+# Our London Adventure — Envelope Style Template
+
+## index.html
+
+html
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Our London Adventure</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our London Adventure</title>
 
-<style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Sky Background */
-body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: linear-gradient(135deg, #d6f0ff, #bde3ff, #a8d8ff);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* Floating Puppies */
-.puppy {
-  position: fixed;
-  bottom: -40px;
-  font-size: 28px;
-  animation: floatUp linear infinite;
-  opacity: 0.9;
-  pointer-events: none;
-  z-index: 1;
-}
-
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0; }
-  20% { opacity: 1; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-
-/* Main Card */
-.container {
-  background: white;
-  padding: 50px;
-  width: 90%;
-  max-width: 650px;
-  border-radius: 30px;
-  text-align: center;
-  box-shadow: 0 20px 50px rgba(77, 166, 255, 0.35);
-  border: 3px solid #cceeff;
-  animation: fadeIn 1s ease forwards;
-  z-index: 2;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Title */
-h1 {
-  color: #4da6ff;
-  font-size: 30px;
-  margin-bottom: 15px;
-  animation: floaty 3s ease-in-out infinite;
-}
-
-@keyframes floaty {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
-}
-
-/* Text */
-p {
-  margin-bottom: 20px;
-  font-size: 16px;
-  color: #444;
-}
-
-/* Day Cards */
-.day-card {
-  background: #f0f9ff;
-  padding: 25px;
-  border-radius: 20px;
-  margin-top: 20px;
-  box-shadow: 0 10px 25px rgba(77, 166, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.day-card:hover {
-  transform: translateY(-5px);
-}
-
-.day-card h2 {
-  color: #4da6ff;
-  margin-bottom: 15px;
-}
-
-/* Button */
-.submit-btn {
-  margin-top: 30px;
-  background: linear-gradient(45deg, #7ec8ff, #4da6ff);
-  border: none;
-  padding: 15px 35px;
-  font-size: 16px;
-  border-radius: 50px;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 10px 25px rgba(77, 166, 255, 0.4);
-}
-
-.submit-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 15px 30px rgba(77, 166, 255, 0.6);
-}
-
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- Floating Puppies -->
-<div class="puppy" style="left:10%; animation-duration: 9s;">🐶</div>
-<div class="puppy" style="left:30%; animation-duration: 12s;">🐾</div>
-<div class="puppy" style="left:50%; animation-duration: 8s;">🐶</div>
-<div class="puppy" style="left:70%; animation-duration: 11s;">🦴</div>
-<div class="puppy" style="left:90%; animation-duration: 10s;">🐕</div>
+  <!-- Floating Puppies -->
 
-<div class="container">
-  <h1>୨ৎ Our London Adventure ༘⋆</h1>
+  <div class="puppy" style="left:10%; animation-duration: 9s;">🐶</div>
+  <div class="puppy" style="left:30%; animation-duration: 12s;">🐾</div>
+  <div class="puppy" style="left:50%; animation-duration: 8s;">🐶</div>
+  <div class="puppy" style="left:70%; animation-duration: 11s;">🦴</div>
+  <div class="puppy" style="left:90%; animation-duration: 10s;">🐕</div>
 
-  <p>YaoYao, I made this little plan for our cutest London trip 💙</p>
+  <!-- Sparkles -->
 
-  <div class="day-card">
-    <h2>☀️ Day 1</h2>
-    Morning: Tower Bridge<br><br>
-    Lunch: Chinatown<br><br>
-    Afternoon: Museum / Arcades<br><br>
-    Evening: Sunset Walk<br><br>
-    Night: Cozy City Stroll
+  <div class="sparkle" style="left:15%; top:15%;">✨</div>
+  <div class="sparkle" style="left:82%; top:20%;">⭐</div>
+  <div class="sparkle" style="left:70%; top:75%;">✨</div>
+  <div class="sparkle" style="left:25%; top:70%;">☁️</div>
+
+  <div class="container">
+
+```
+<h1>୨ৎ Our London Adventure ༘⋆</h1>
+
+<p>
+  Eight days. Eight little envelopes.
+  Tiny memories waiting to be opened 💙
+</p>
+
+<!-- Envelope Grid -->
+<div class="envelope-grid">
+
+  <!-- DAY 1 -->
+  <div class="envelope-card">
+    <div class="envelope" onclick="toggleLetter(this)">
+      <div class="envelope-front">
+        <span class="stamp">🇬🇧</span>
+        <h2>Day 1</h2>
+        <p>London Skies ☁️</p>
+      </div>
+    </div>
+
+    <div class="letter">
+      <h3>☀️ Day 1 Adventure</h3>
+
+      <div class="activity">🌤️ Morning — Tower Bridge</div>
+      <div class="activity">🍜 Lunch — Chinatown</div>
+      <div class="activity">🎮 Afternoon — Arcades</div>
+      <div class="activity">🌆 Evening — Sunset Walk</div>
+      <div class="activity">🌃 Night — Cozy City Stroll</div>
+
+      <div class="note">
+        “the beginning of our little london story ♡”
+      </div>
+    </div>
   </div>
 
-  <div class="day-card">
-    <h2>🌙 Day 2</h2>
-    Morning: Cafes<br><br>
-    Lunch: Café Date<br><br>
-    Afternoon: London Eye<br><br>
-    Evening: The Shard View<br><br>
-    Night: Movie Night
-  </div>
-  
-  <div class="day-card">
-    <h2>🌙 Day 3</h2>
-    Morning: Cafes<br><br>
-    Lunch: Café Date<br><br>
-    Afternoon: London Eye<br><br>
-    Evening: The Shard View<br><br>
-    Night: Movie Night
+  <!-- DAY 2 -->
+  <div class="envelope-card">
+    <div class="envelope" onclick="toggleLetter(this)">
+      <div class="envelope-front pink">
+        <span class="stamp">☕</span>
+        <h2>Day 2</h2>
+        <p>Café Dreams</p>
+      </div>
+    </div>
+
+    <div class="letter">
+      <h3>☕ Day 2 Adventure</h3>
+
+      <div class="activity">🥐 Morning — Cute Cafés</div>
+      <div class="activity">🍓 Lunch — Dessert Date</div>
+      <div class="activity">🎡 Afternoon — London Eye</div>
+      <div class="activity">🌙 Evening — Riverside Walk</div>
+      <div class="activity">🎬 Night — Movie Night</div>
+
+      <div class="note">
+        “this day feels soft and warm already 💭”
+      </div>
+    </div>
   </div>
 
-  <div class="day-card">
-    <h2>🌙 Day 4</h2>
-    Morning: Cafes<br><br>
-    Lunch: Café Date<br><br>
-    Afternoon: London Eye<br><br>
-    Evening: The Shard View<br><br>
-    Night: Movie Night
+  <!-- DAY 3 -->
+  <div class="envelope-card">
+    <div class="envelope" onclick="toggleLetter(this)">
+      <div class="envelope-front purple">
+        <span class="stamp">🎮</span>
+        <h2>Day 3</h2>
+        <p>Arcade Neon</p>
+      </div>
+    </div>
+
+    <div class="letter">
+      <h3>🌃 Day 3 Adventure</h3>
+
+      <div class="activity">🎀 Morning — Shopping</div>
+      <div class="activity">🍜 Lunch — Korean Food</div>
+      <div class="activity">🕹️ Afternoon — Arcades</div>
+      <div class="activity">🌆 Evening — Piccadilly Lights</div>
+      <div class="activity">🌌 Night — Late Train Ride</div>
+
+      <div class="note">
+        “neon lights and sleepy london skies ✨”
+      </div>
+    </div>
   </div>
-  <button class="submit-btn" onclick="startDate()">Start Our Adventure 🐶💙</button>
+
+  <!-- TEMPLATE DAYS -->
+  <div class="envelope-card small-template">Day 4 ✉️</div>
+  <div class="envelope-card small-template">Day 5 ✉️</div>
+  <div class="envelope-card small-template">Day 6 ✉️</div>
+  <div class="envelope-card small-template">Day 7 ✉️</div>
+  <div class="envelope-card small-template">Day 8 ✉️</div>
+
 </div>
 
-<script>
-function startDate() {
-  alert("Eight days. One adventure. With you 💙🐶");
-}
-</script>
+<button class="submit-btn" onclick="showMessage()">
+  Start Our Adventure 🐶💙
+</button>
+```
+
+  </div>
+
+  <script>
+
+    function toggleLetter(element) {
+      const letter = element.parentElement.querySelector('.letter');
+      letter.classList.toggle('open');
+    }
+
+    function showMessage() {
+      alert('Eight days. One adventure. With you 💙');
+    }
+
+  </script>
 
 </body>
 </html>
