@@ -512,318 +512,317 @@
 
   <!-- JAVASCRIPT -->
 
-  <script>
+<script>
 
-    const days = {
+  const days = {
 
+    /* DAY 1 */
 
-      /* DAY 1 */
+    1: {
 
-      1: {
+      emoji: "✈️",
 
-        emoji: "✈️",
+      day: "SATURDAY • AUGUST 22",
 
-        day: "SATURDAY • AUGUST 22",
+      title: "Arrival Day",
 
-        title: "Arrival Day",
+      plans: [
+        "✈️ Airport pickup",
+        "🏠 Air B&B",
+        "🛒 Grocery shopping / Dinner at Burger and Lobster",
+        "🌆 Evening walk"
+      ],
 
-        plans: [
-          "✈️ Airport pickup",
-          "🏠 Air B&B",
-          "🛒 Grocery shopping/Dinner at Burger and Lobster",
-          "🌆 Evening walk"
-        ],
+      note:
+        "The beginning of our little London story ♡"
 
-        note:
-          "The beginning of our little London story ♡"
+    },
 
-      },
 
+    /* DAY 2 - SUNDAY FLEXIBLE */
 
-      /* DAY 2 - SUNDAY FLEXIBLE */
+    2: {
 
-      2: {
+      emoji: "☀️",
 
-        emoji: "☀️",
+      day: "SUNDAY • AUGUST 23",
 
-        day: "SUNDAY • AUGUST 23",
+      title: "Flexible Day",
 
-        title: "Flexible Day",
+      plans: [
+        "☁️ Baby lunch with friends!",
+        "♡ Decide together",
+        "🌷 Evening dinner with baby and her friends"
+      ],
 
-        plans: [
-          "☁️ Baby lunch with friends!",
-          "♡ Decide together",
-          "🌷 Evening dinner with baby and her friends"
-        ],
+      note:
+        "A completely open day — we can decide what feels right when we get there."
 
-        note:
-          "A completely open day — we can decide what feels right when we get there."
+    },
 
-      },
 
+    /* DAY 3 */
 
-      /* DAY 3 */
+    3: {
 
-      3: {
+      emoji: "🎮",
 
-        emoji: "🎮",
+      day: "MONDAY • AUGUST 24",
 
-        day: "MONDAY • AUGUST 24",
+      title: "City Lights",
 
-        title: "City Lights",
+      plans: [
+        "🎮 Arcades",
+        "🛍️ Shopping",
+        "✨ Cafe and out all day"
+      ],
 
-        plans: [
-          "🎮 Arcades",
-          "🛍️ Shopping",
-          "✨ Cafe and out all day"
-        ],
+      note:
+        "A day for games, exploring and staying out a little late."
 
-        note:
-          "A day for games, exploring and staying out a little late."
+    },
 
-      },
 
+    /* DAY 4 */
 
-      /* DAY 4 */
+    4: {
 
-      4: {
+      emoji: "🛍️",
 
-        emoji: "🛍️",
+      day: "TUESDAY • AUGUST 25",
 
-        day: "TUESDAY • AUGUST 25",
+      title: "Markets & Riverside",
 
-        title: "Markets & Riverside",
+      plans: [
+        "🛍️ Markets",
+        "🏠 Home",
+        "🌊 Riverside walk"
+      ],
 
-        plans: [
-          "🛍️ Markets",
-          "🏠 Home",
-          "🌊 Riverside walk"
-        ],
+      note:
+        "A slower London day with markets and a little riverside wandering."
 
-        note:
-          "A slower London day with markets and a little riverside wandering."
+    },
 
-      },
 
+    /* DAY 5 */
 
-      /* DAY 5 */
+    5: {
 
-      5: {
+      emoji: "🏠",
 
-        emoji: "🏠",
+      day: "WEDNESDAY • AUGUST 26",
 
-        day: "WEDNESDAY • AUGUST 26",
+      title: "Relax Day",
 
-        title: "Relax Day",
+      plans: [
+        "🏠 Home / cook at home",
+        "😊 To decide",
+        "🧸 Relax day"
+      ],
 
-        plans: [
-          "🏠 Home / cook at home",
-          "😊 To decide",
-          "🧸 Relax day"
-        ],
+      note:
+        "Sometimes the best adventure is simply having nowhere else to be."
 
-        note:
-          "Sometimes the best adventure is simply having nowhere else to be."
+    },
 
-      },
 
+    /* DAY 6 - THURSDAY FLEXIBLE */
 
-      /* DAY 6 - THURSDAY FLEXIBLE */
+    6: {
 
-      6: {
+      emoji: "☁️",
 
-        emoji: "☁️",
+      day: "THURSDAY • AUGUST 27",
 
-        day: "THURSDAY • AUGUST 27",
+      title: "Flexible Day",
 
-        title: "Flexible Day",
+      plans: [
+        "☁️ Baby with her friends",
+        "♡ Decide together",
+        "🇬🇧 Solo adventure while baby is occupied"
+      ],
 
-        plans: [
-          "☁️ Baby with her friends",
-          "♡ Decide together",
-          "🇬🇧 Solo adventure while baby is occupied
-        ],
+      note:
+        "Keep this day open. We can choose our own adventure when the day arrives."
 
-        note:
-          "Keep this day open. We can choose our own adventure when the day arrives."
+    },
 
-      },
 
+    /* DAY 7 */
 
-      /* DAY 7 */
+    7: {
 
-      7: {
+      emoji: "🛍️",
 
-        emoji: "🛍️",
+      day: "FRIDAY • AUGUST 28",
 
-        day: "FRIDAY • AUGUST 28",
+      title: "London Views",
 
-        title: "London Views",
+      plans: [
+        "🛍️ Shopping in Oxford",
+        "🌆 Views",
+        "🌙 Late walks / Dinner out"
+      ],
 
-        plans: [
-          "🛍️ Shopping in OXFORDDDDDD",
-          "🌆 Views",
-          "🌙 Late walks/Dnner out"
-        ],
+      note:
+        "One more day to make some very good memories."
 
-        note:
-          "One more day to make some very good memories."
+    },
 
-      },
 
+    /* DAY 8 */
 
-      /* DAY 8 */
+    8: {
 
-      8: {
+      emoji: "☕",
 
-        emoji: "☕",
+      day: "SATURDAY • AUGUST 29",
 
-        day: "SATURDAY • AUGUST 29",
+      title: "Goodbye London",
 
-        title: "Goodbye London",
+      plans: [
+        "☕ Final café",
+        "📸 Memories",
+        "🇬🇧 Evening time together"
+      ],
 
-        plans: [
-          "☕ Final café",
-          "📸 Memories",
-          "🇬🇧 Evening time together"
-        ],
+      note:
+        "The final little chapter of our London adventure ♡"
 
-        note:
-          "The final little chapter of our London adventure ♡"
+    },
 
-      },
 
+    /* DAY 9 - FLY HOME */
 
-      /* DAY 9 - FLY HOME */
+    9: {
 
-      9: {
+      emoji: "✈️",
 
-        emoji: "✈️",
+      day: "SUNDAY • AUGUST 30",
 
-        day: "SUNDAY • AUGUST 30",
+      title: "Until Next Time ♡",
 
-        title: "Until Next Time ♡",
+      plans: [
+        "🧳 Pack up",
+        "✈️ Flight home",
+        "📸 One last look at London",
+        "💙 Until our next adventure"
+      ],
 
-        plans: [
-          "🧳 Pack up",
-          "✈️ Flight home",
-          "📸 One last look at London",
-          "💙 Until our next adventure"
-        ],
-
-        note:
-          "The adventure only started, more memories to come with us. ♡"
-
-      }
-
-    };
-
-
-    /* OPEN ENVELOPE */
-
-    function openEnvelope(dayNumber) {
-
-      const day = days[dayNumber];
-
-      document.getElementById("modalEmoji").textContent =
-        day.emoji;
-
-      document.getElementById("modalDay").textContent =
-        day.day;
-
-      document.getElementById("modalTitle").textContent =
-        day.title;
-
-      document.getElementById("modalNote").textContent =
-        day.note;
-
-
-      const plansContainer =
-        document.getElementById("modalPlans");
-
-
-      plansContainer.innerHTML = "";
-
-
-      day.plans.forEach(function(plan) {
-
-        const item =
-          document.createElement("div");
-
-        item.className = "plan";
-
-        item.textContent = plan;
-
-        plansContainer.appendChild(item);
-
-      });
-
-
-      document
-        .getElementById("dayModal")
-        .classList.add("show");
-
-
-      document.body.classList.add("modal-open");
+      note:
+        "The adventure only started, more memories to come with us. ♡"
 
     }
 
+  };
 
-    /* CLOSE ENVELOPE */
 
-    function closeEnvelope() {
+  /* OPEN ENVELOPE */
 
-      document
-        .getElementById("dayModal")
-        .classList.remove("show");
+  function openEnvelope(dayNumber) {
 
-      document.body.classList.remove("modal-open");
+    const day = days[dayNumber];
 
+    if (!day) {
+      console.error("Day not found:", dayNumber);
+      return;
     }
 
+    document.getElementById("modalEmoji").textContent =
+      day.emoji;
 
-    /* START BUTTON */
+    document.getElementById("modalDay").textContent =
+      day.day;
 
-    function startAdventure() {
+    document.getElementById("modalTitle").textContent =
+      day.title;
 
-      document
-        .querySelector(".envelope")
-        .scrollIntoView({
-          behavior: "smooth",
-          block: "center"
-        });
-
-    }
+    document.getElementById("modalNote").textContent =
+      day.note;
 
 
-    /* CLICK OUTSIDE TO CLOSE */
+    const plansContainer =
+      document.getElementById("modalPlans");
+
+    plansContainer.innerHTML = "";
+
+
+    day.plans.forEach(function(plan) {
+
+      const item =
+        document.createElement("div");
+
+      item.className = "plan";
+
+      item.textContent = plan;
+
+      plansContainer.appendChild(item);
+
+    });
+
 
     document
       .getElementById("dayModal")
-      .addEventListener("click", function(event) {
+      .classList.add("show");
 
-        if (event.target === this) {
 
-          closeEnvelope();
+    document.body.classList.add("modal-open");
 
-        }
+  }
 
+
+  /* CLOSE ENVELOPE */
+
+  function closeEnvelope() {
+
+    document
+      .getElementById("dayModal")
+      .classList.remove("show");
+
+    document.body.classList.remove("modal-open");
+
+  }
+
+
+  /* START BUTTON */
+
+  function startAdventure() {
+
+    document
+      .querySelector(".envelope")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "center"
       });
 
+  }
 
-    /* ESCAPE TO CLOSE */
 
-    document.addEventListener("keydown", function(event) {
+  /* CLICK OUTSIDE TO CLOSE */
 
-      if (event.key === "Escape") {
+  document
+    .getElementById("dayModal")
+    .addEventListener("click", function(event) {
 
+      if (event.target === this) {
         closeEnvelope();
-
       }
 
     });
 
-  </script>
+
+  /* ESCAPE TO CLOSE */
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+      closeEnvelope();
+    }
+
+  });
+
+</script>
 
 </body>
 </html>
