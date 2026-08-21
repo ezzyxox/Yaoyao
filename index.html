@@ -1,80 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our London Adventure</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Our London Adventure ✈️🇬🇧</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Floating emojis -->
-  <div class="puppy" style="left:10%; animation-duration: 9s;">🐶</div>
-  <div class="puppy" style="left:30%; animation-duration: 12s;">🐾</div>
-  <div class="puppy" style="left:50%; animation-duration: 8s;">🐶</div>
-  <div class="puppy" style="left:70%; animation-duration: 11s;">🦴</div>
-  <div class="puppy" style="left:90%; animation-duration: 10s;">🐕</div>
+  <div class="puppy puppy-1">🐶</div>
+  <div class="puppy puppy-2">🐾</div>
+  <div class="puppy puppy-3">☁️</div>
+  <div class="puppy puppy-4">🦴</div>
+  <div class="puppy puppy-5">🐕</div>
 
-  <div class="container">
+  <main class="container">
 
-    <h1>Our London Adventure ✨</h1>
-    <p>Nine days. Eight envelopes. Open each memory.</p>
+    <header class="hero">
 
-    <div class="grid">
-
-      <div class="card">
-        <h2>Day 1</h2>
-        <p>Airport pickup - Air B&B • Grocery Shopping • Evening walk</p>
+      <div class="stamp">
+        🇬🇧
+        <span>LONDON</span>
       </div>
 
-      <div class="card">
-        <h2>Day 2</h2>
-        <p>Café for breakfast• London Eye • Movie Night</p>
+      <div>
+        <p class="little-title">୨ৎ OUR LITTLE TRIP ༘⋆</p>
+
+        <h1>Our London Adventure ✨</h1>
+
+        <p class="subtitle">
+          Eight days. Eight little envelopes.<br>
+          One London story. 💙
+        </p>
       </div>
 
-      <div class="card">
-        <h2>Day 3</h2>
-        <p>Arcades • Shopping • Neon Lights</p>
-      </div>
+      <div class="cloud">☁️</div>
 
-      <div class="card">
-        <h2>Day 4</h2>
-        <p>Markets • Home • Riverside Walk</p>
-      </div>
+    </header>
 
-      <div class="card">
-        <h2>Day 5</h2>
-        <p>Home/Cook at home • Home • Relax Day</p>
-      </div>
+    <div class="divider">
+      <span>✦</span>
+      <span>✉️</span>
+      <span>✦</span>
+    </div>
 
-      <div class="card">
-        <h2>Day 6</h2>
-        <p>Home/Cook at home • Street Food • Late Walks</p>
-      </div>
+    <p class="instruction">
+      Pick an envelope and open a little piece of our adventure ♡
+    </p>
 
-      <div class="card">
-        <h2>Day 7</h2>
-        <p>Shopping • Views • Late Walks</p>
-      </div>
+    <section class="envelope-grid">
 
-      <div class="card">
-        <h2>Day 8</h2>
-        <p>Final Café • Memories • Goodbye London</p>
+      <button class="envelope" onclick="openEnvelope(1)">
+        <div class="envelope-top">
+          <span class="day-number">01</span>
+          <span class="mini-stamp">✈️</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Day One</strong>
+          <small>Arrival Day</small>
+        </div>
+        <div class="seal">💙</div>
+      </button>
+
+      <button class="envelope" onclick="openEnvelope(2)">
+        <div class="envelope-top">
+          <span class="day-number">02</span>
+          <span class="mini-stamp">☕</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Day Two</strong>
+          <small>London Day</small>
+        </div>
+        <div class="seal">💙</div>
+      </button>
+
+      <button class="envelope" onclick="openEnvelope(3)">
+        <div class="envelope-top">
+          <span class="day-number">03</span>
+          <span class="mini-stamp">🎮</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Day Three</strong>
+          <small>City Lights</small>
+        </div>
+        <div class="seal">💙</div>
+      </button>
+
+      <!-- SUNDAY - FLEXIBLE -->
+      <button class="envelope flexible" onclick="openEnvelope(4)">
+        <div class="envelope-top">
+          <span class="day-number">04</span>
+          <span class="mini-stamp">☀️</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Sunday</strong>
+          <small>Flexible Day ☁️</small>
+        </div>
+        <div class="seal">?</div>
+      </button>
+
+      <button class="envelope" onclick="openEnvelope(5)">
+        <div class="envelope-top">
+          <span class="day-number">05</span>
+          <span class="mini-stamp">🏠</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Day Five</strong>
+          <small>Slow Day</small>
+        </div>
+        <div class="seal">💙</div>
+      </button>
+
+      <button class="envelope" onclick="openEnvelope(6)">
+        <div class="envelope-top">
+          <span class="day-number">06</span>
+          <span class="mini-stamp">🍜</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Day Six</strong>
+          <small>Food & Walks</small>
+        </div>
+        <div class="seal">💙</div>
+      </button>
+
+      <button class="envelope" onclick="openEnvelope(7)">
+        <div class="envelope-top">
+          <span class="day-number">07</span>
+          <span class="mini-stamp">🛍️</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Day Seven</strong>
+          <small>London Views</small>
+        </div>
+        <div class="seal">💙</div>
+      </button>
+
+      <!-- THURSDAY - FLEXIBLE -->
+      <button class="envelope flexible" onclick="openEnvelope(8)">
+        <div class="envelope-top">
+          <span class="day-number">08</span>
+          <span class="mini-stamp">☁️</span>
+        </div>
+        <div class="envelope-flap">♡</div>
+        <div class="envelope-label">
+          <strong>Thursday</strong>
+          <small>Flexible Day ☁️</small>
+        </div>
+        <div class="seal">?</div>
+      </button>
+
+    </section>
+
+    <div class="bottom-note">
+      <span>🐶</span>
+      <p>Made with a little bit of London magic</p>
+      <span>♡</span>
+    </div>
+
+    <button class="start-button" onclick="startAdventure()">
+      Start Adventure 💙
+    </button>
+
+  </main>
+
+
+  <div class="modal" id="dayModal">
+
+    <div class="modal-card">
+
+      <button class="close-button" onclick="closeEnvelope()" aria-label="Close">
+        ×
+      </button>
+
+      <div class="modal-stamp" id="modalEmoji">✈️</div>
+
+      <p class="modal-day" id="modalDay">DAY ONE</p>
+
+      <h2 id="modalTitle">Arrival Day</h2>
+
+      <div class="paper-line"></div>
+
+      <div class="plans" id="modalPlans"></div>
+
+      <p class="little-note" id="modalNote"></p>
+
+      <div class="modal-footer">
+        ✦ London memories ✦
       </div>
 
     </div>
 
-    <button onclick="startAdventure()">Start Adventure 💙</button>
-
   </div>
 
+
   <script>
-    function startAdventure() {
-      alert("Eight days. One story. One journey 💙");
+
+    const days = {
+
+      1: {
+        emoji: "✈️",
+        day: "DAY ONE",
+        title: "Arrival Day",
+        plans: [
+          "✈️ Airport pickup",
+          "🏠 Air B&B",
+          "🛒 Grocery shopping",
+          "🌆 Evening walk"
+        ],
+        note: "The beginning of our little London story ♡"
+      },
+
+      2: {
+        emoji: "☕",
+        day: "DAY TWO",
+        title: "London Day",
+        plans: [
+          "☕ Café for breakfast",
+          "🎡 London Eye",
+          "🎬 Movie night"
+        ],
+        note: "A proper London day, from morning coffee to movie night."
+      },
+
+      3: {
+        emoji: "🎮",
+        day: "DAY THREE",
+        title: "City Lights",
+        plans: [
+          "🎮 Arcades",
+          "🛍️ Shopping",
+          "✨ Neon lights"
+        ],
+        note: "A day for games, exploring and staying out a little late."
+      },
+
+      4: {
+        emoji: "☀️",
+        day: "SUNDAY • AUGUST 23",
+        title: "Flexible Day",
+        plans: [
+          "☁️ No fixed plans",
+          "♡ Decide together",
+          "🌷 See where the day takes us"
+        ],
+        note: "A completely open day — we can decide what feels right when we get there."
+      },
+
+      5: {
+        emoji: "🏠",
+        day: "DAY FIVE",
+        title: "Slow Day",
+        plans: [
+          "🏠 Home / cook at home",
+          "🏠 Home",
+          "🧸 Relax day"
+        ],
+        note: "Sometimes the best adventure is simply having nowhere else to be."
+      },
+
+      6: {
+        emoji: "🍜",
+        day: "DAY SIX",
+        title: "Food & Late Walks",
+        plans: [
+          "🏠 Home / cook at home",
+          "🍜 Street food",
+          "🌙 Late walks"
+        ],
+        note: "Good food, warm evenings and wandering around London."
+      },
+
+      7: {
+        emoji: "🛍️",
+        day: "DAY SEVEN",
+        title: "London Views",
+        plans: [
+          "🛍️ Shopping",
+          "🌆 Views",
+          "🌙 Late walks"
+        ],
+        note: "One more day to make some very good memories."
+      },
+
+      8: {
+        emoji: "☁️",
+        day: "THURSDAY • AUGUST 27",
+        title: "Flexible Day",
+        plans: [
+          "☁️ No fixed plans",
+          "♡ Decide together",
+          "🇬🇧 One last little adventure"
+        ],
+        note: "Keep this day open. We can choose our own adventure when the day arrives."
+      }
+
+    };
+
+
+    function openEnvelope(dayNumber) {
+
+      const day = days[dayNumber];
+
+      document.getElementById("modalEmoji").textContent = day.emoji;
+      document.getElementById("modalDay").textContent = day.day;
+      document.getElementById("modalTitle").textContent = day.title;
+      document.getElementById("modalNote").textContent = day.note;
+
+      const plansContainer = document.getElementById("modalPlans");
+
+      plansContainer.innerHTML = "";
+
+      day.plans.forEach(function(plan) {
+
+        const item = document.createElement("div");
+
+        item.className = "plan";
+
+        item.textContent = plan;
+
+        plansContainer.appendChild(item);
+
+      });
+
+      document.getElementById("dayModal").classList.add("show");
+
+      document.body.classList.add("modal-open");
     }
+
+
+    function closeEnvelope() {
+
+      document.getElementById("dayModal").classList.remove("show");
+
+      document.body.classList.remove("modal-open");
+
+    }
+
+
+    function startAdventure() {
+
+      document.querySelector(".envelope").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+    }
+
+
+    document.getElementById("dayModal").addEventListener("click", function(event) {
+
+      if (event.target === this) {
+        closeEnvelope();
+      }
+
+    });
+
+
+    document.addEventListener("keydown", function(event) {
+
+      if (event.key === "Escape") {
+        closeEnvelope();
+      }
+
+    });
+
   </script>
 
 </body>
